@@ -66,7 +66,7 @@ def ann_txt_match(file, tags):
 def file_finder():
     folders = ['exam2014', 'exam2015', 'exam2016', 'exam2017']
     for where in folders:
-        file_address = '/Users/elizavetaersova/PycharmProjects/approximation/REALEC/' + where
+        file_address = '/REALEC/' + where
         csv_table_creator()
         print(where)
         files = os.listdir(file_address)
