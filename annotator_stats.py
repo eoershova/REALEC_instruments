@@ -9,13 +9,14 @@ words = 0
 def file_finder():
     print("Insert the folder's name")
     where = input()
-    file_address = '/Users/elizavetaersova/PycharmProjects/approximation/REALEC/' + where
+    file_address = '/REALEC/' + where
     #print(where)
     files = os.listdir(file_address)
     #print(files)
     text_n_tag_counter(files, file_address, words, tags)
 
-
+#annotator nicknames consist of the first letter of their names and two first letters of their surnames,
+#EEr would stand for Elizaveta Ershova
 def text_n_tag_counter(files, file_address, words, tags):
     annotator_files_txt = []
     annotator_files_ann = []
