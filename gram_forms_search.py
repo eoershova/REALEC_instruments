@@ -63,21 +63,7 @@ def ann_txt_match(file, tags):
         #print(raw_data)
 
 
-
 def file_finder():
-    #print("Insert the folder's name")
-    # where = input()
-    # file_address = '/Users/elizavetaersova/PycharmProjects/approximation/REALEC/' + where
-    #file_address = '/Users/elizavetaersova/PycharmProjects/approximation/REALEC/exam2017'
-    #folders = ['exam2014', 'exam2015', 'exam2016', 'exam2017']
-    #for where in folders:
-    #file_address = '/Users/elizavetaersova/PycharmProjects/approximation/REALEC/' + where
-    #print(where)
-    #files = os.listdir(file_address)
-    #print(files)
-    #tag_counter(files, file_address)
-    #, 'exam2015', 'exam2016', 'exam2017'
-    #'exam2014', 'exam2015', 'exam2016',
     folders = ['exam2014', 'exam2015', 'exam2016', 'exam2017']
     for where in folders:
         file_address = '/Users/elizavetaersova/PycharmProjects/approximation/REALEC/' + where
@@ -96,9 +82,6 @@ def tag_counter(files, file_address):
             ann_files.append(i)
     for file in ann_files:
         texts = file_scanner(file, file_address)
-
-
-
 
 
 def main():
